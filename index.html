@@ -6,7 +6,6 @@
     </head>
     <body>
         <h1>Welcome to my Insect Website!</h1>
-        <h2>(Created as part of Flatiron's Software Engineering Program)</h2>
         <section id="intro">
             <p>
                 This website demonstrates the knowledge I've learned during Flatiron's Software Engineering 
@@ -14,13 +13,18 @@
                 creating websites. This website is structured with HTML, and the various fonts, colors, and styling
                 are applied using CSS. Finally, the bit of interactivity on this website is all thanks to JavaScript. :)
             </p>
-        </section>
-        <section>
             <p>
                 Below, I have some sample kinds of insects you might come across. To learn more about each kind, 
                 you can click on the image, and more information will appear! You'll also notice that I have some different 
                 types of insects listed as buttons; clicking on a button will give you a different set of insects to view!
             </p>
+        </section>
+        <section>
+            <div id="buttons">
+                <button id="butterfly-btn" class="green round-borders">Butterflies</button>
+                <button id="moth-btn" class="green round-borders">Moths</button>
+                <button id="beetle-btn" class="green round-borders">Beetles</button>
+            </div>
             <div id="butterflies">
                 <img
                     src="https://media.meganmccartyphotography.com/butterflies/June+13_July+3+2007+066_watermarked.jpg"
@@ -86,11 +90,6 @@
                     src="https://media.meganmccartyphotography.com/arthropods/IMG_7956_watermarked.jpg"
                     alt="Unknown scarab beetle crawling on sand"
                 >
-            </div>
-            <div id="buttons">
-                <button id="butterfly-btn" class="green round-borders">Butterflies</button>
-                <button id="moth-btn" class="green round-borders">Moths</button>
-                <button id="beetle-btn" class="green round-borders">Beetles</button>
             </div>
         </section>
         <footer>All photos © Megan McCarty. All rights reserved.</footer>
