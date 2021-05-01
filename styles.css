@@ -5,7 +5,7 @@ body {
     background-color: rgb(220, 238, 217);
 }
 
-h1 {
+h1, footer {
     background-color: black;
     color: white;
     width: 100%;
