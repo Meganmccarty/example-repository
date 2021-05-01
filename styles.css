@@ -30,3 +30,14 @@ body {
     border-radius: 10px;
     border: 1px solid blue;
 }
+
+#butterflies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#butterflies img {
+    width: 25%;
+    min-width: 250px;
+}
