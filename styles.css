@@ -49,13 +49,17 @@ h1, footer {
     display: none;
 }
 
-#butterflies, #moths {
+#beetles {
+    display: none;
+}
+
+#butterflies, #moths, #beetles {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#butterflies img, #moths img {
+#butterflies img, #moths img, #beetles img {
     width: 25%;
     min-width: 350px;
     margin: 15px;
