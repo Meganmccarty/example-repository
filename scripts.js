@@ -28,18 +28,21 @@ beetlesButton.addEventListener('click', function() {
 })
 
 // Clicking an image opens the lightbox
+const lightbox = document.getElementById("lightbox");
+const lightboxContent = document.getElementById("lightbox-content")
 const images = document.getElementsByClassName("hover-shadow");
+const closeButton = document.getElementById("close");
+
 
 for (let i = 0; i < images.length; i++) {
     images[i].addEventListener('click', function() {
         lightbox.style.display = 'flex';
+        let imagesCopy = images[i].cloneNode()
+        lightboxContent.appendChild(imagesCopy);
+
+        closeButton.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+            lightboxContent.removeChild(imagesCopy);
+        })
     })
 }
-
-// Variables and function for closing lightbox
-const closeButton = document.getElementById("close");
-const lightbox = document.getElementById("lightbox");
-
-closeButton.addEventListener('click', function() {
-    lightbox.style.display = 'none';
-})
