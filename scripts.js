@@ -71,8 +71,9 @@ for (let i = 0; i < figures.length; i++) {
             lightboxDescription = lightboxContent.lastElementChild;
 
             // Remove <img and <p> in lightbox
-            lightboxContent.removeChild(lightboxImage);
-            lightboxContent.removeChild(lightboxDescription);
+            //lightboxContent.removeChild(lightboxImage);
+            //lightboxContent.removeChild(lightboxDescription);
+            lightboxContent.innerHTML = "";
         })
     })
 }
