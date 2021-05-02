@@ -68,12 +68,26 @@ section#intro {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-#butterflies img, #moths img, #beetles img {
-    width: 25%;
-    min-width: 350px;
+.figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 33%;
+}
+
+.figure img {
     margin: 15px;
+    min-width: 350px;
+    width: 50%;
+}
+
+.figure p {
+    display: none;
 }
 
 img.hover-shadow {
@@ -97,7 +111,7 @@ img.hover-shadow {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.lightbox-content {
+#lightbox-content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -105,12 +119,12 @@ img.hover-shadow {
     justify-content: center;
 }
 
-.lightbox-content img {
+#lightbox-content img {
     width: 90%;
     box-shadow: 5px 8px 15px black;
 }
 
-.lightbox-content p {
+#lightbox-content p {
     width: 90%;
     color: white;
 }
