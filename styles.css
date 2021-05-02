@@ -75,14 +75,15 @@ section#intro {
 .figure {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    width: 33%;
+    min-width: 350px;
+    margin: 5px;
+    width: 32%;
 }
 
 .figure img {
-    margin: 15px;
-    min-width: 350px;
+    margin: 10px;
+    min-width: 340px;
     width: 50%;
 }
 
