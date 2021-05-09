@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(220, 238, 217);
+    max-width: 100%;
 }
 
 h1, footer, footer a {
@@ -168,15 +169,45 @@ img.hover-shadow {
 }
 
 @media screen and (max-width: 850px) {
+    section {
+        padding: 0 20px 0 20px;
+    }
+    
     #lightbox {
         right: 12.5%;
         width: 75%;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {    
+    section {
+        padding: 0;
+        margin: 0;
+    }
+
+    section#intro {
+        padding: 0 10px 0 10px;
+    }
+    
     #lightbox {
         right: 0%;
         width: 100%;
+    }
+
+    .figure img {
+        min-width: 150px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #buttons button {
+        width: 50%;
+
     }
 }
